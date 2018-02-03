@@ -4,15 +4,15 @@
 <g id="Canvas" transform="translate(139 102)">
 <g id="Component">
 <g id="Ellipse">
-<use xlink:href="#path0_fill" transform="translate(-139 -102)" fill="#E01A4F"/>
+<use xlink:href="#path0_fill" transform="translate(-139 -102)" fill="#242325"/>
 </g>
 <g id="Vector">
-<use xlink:href="#path1_fill" transform="translate(-117 -66)" fill="#242325"/>
-<use xlink:href="#path2_fill" transform="translate(-117 -66)" fill="#242325"/>
-<use xlink:href="#path3_fill" transform="translate(-117 -66)" fill="#242325"/>
-<use xlink:href="#path4_fill" transform="translate(-117 -66)" fill="#242325"/>
-<use xlink:href="#path5_fill" transform="translate(-117 -66)" fill="#242325"/>
-<use xlink:href="#path6_fill" transform="translate(-117 -66)" fill="#242325"/>
+<use xlink:href="#path1_fill" transform="translate(-117 -66)" fill="#E01A4F"/>
+<use xlink:href="#path2_fill" transform="translate(-117 -66)" fill="#E01A4F"/>
+<use xlink:href="#path3_fill" transform="translate(-117 -66)" fill="#E01A4F"/>
+<use xlink:href="#path4_fill" transform="translate(-117 -66)" fill="#E01A4F"/>
+<use xlink:href="#path5_fill" transform="translate(-117 -66)" fill="#E01A4F"/>
+<use xlink:href="#path6_fill" transform="translate(-117 -66)" fill="#E01A4F"/>
 </g>
 </g>
 </g>
