@@ -1,0 +1,12 @@
+<svg width="60" height="57.67955" viewBox="0 0 181 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Subtract</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(139 102)">
+<g id="Subtract">
+<use xlink:href="#path0_fill" transform="translate(-139 -102)" fill="#E01A4F"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 90.5 174C 140.482 174 181 135.049 181 87C 181 38.9512 140.482 0 90.5 0C 40.5182 0 0 38.9512 0 87C 0 135.049 40.5182 174 90.5 174ZM 64 36L 47 36L 47 128L 64 128L 64 36ZM 99 36L 80 36L 80 50L 99 50L 99 36ZM 117 36L 136 36L 136 50L 117 50L 117 36ZM 110 126L 98 72L 81 72L 71 126L 110 126ZM 117 72L 151 72L 151 126L 117 126L 117 72ZM 41 113L 22 113L 22 128L 41 128L 41 113Z"/>
+</defs>
+</svg>
