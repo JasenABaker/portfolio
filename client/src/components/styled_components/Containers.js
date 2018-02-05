@@ -125,7 +125,7 @@ export const ContentDiv = styled.div`
             p {
                 font-size: 2em;
                 width: 450px;
-                marign-right: auto;
+                marign: 10px auto 0 0;
                 
             }
         }

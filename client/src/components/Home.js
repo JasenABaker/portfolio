@@ -21,9 +21,18 @@ class Home extends Component {
                 </div>
                 <Contain>
                 <h2>My name is Jasen and I love to code.</h2>
-                <ButtonHome>
+                <Link 
+                    activeClass= "Active"
+                    to="Sub"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={10}
+                    duration={1000}
+                    delay={30}
+                    isDynamic={true}><ButtonHome>
                     Work with me.
-                </ButtonHome>
+                </ButtonHome></Link>
                 </Contain>
                 <div>
                     <Link 

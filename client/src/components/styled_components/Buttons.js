@@ -27,6 +27,10 @@ export const ButtonHome = styled.button`
 
 `
 
+export const ButtonFoot = ButtonHome.extend`
+    border: 2px solid #242325;
+`
+
 export const ATags = styled.a`
     color: #fff;
     text-decoration: none;
@@ -35,4 +39,5 @@ export const ATags = styled.a`
 
 
 
-export default { ButtonHome, ATags }
+export default { ButtonHome, 
+                ATags,}
