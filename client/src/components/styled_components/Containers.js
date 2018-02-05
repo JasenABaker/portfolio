@@ -59,33 +59,62 @@ export const ContainerTwo = styled.div`
         margin: 10px 10px;
         text-align: center;
     }
+    @media screen and (min-width: 550px) {
+        height: 120vh;
+
+        h2 {
+            font-size: 2em;
+            margin: 30px 10px;
+        }
+
+    }
 
 `
 
-export const ContainerThree = ContainerTwo.extend`
+export const ContainerThree = styled.div`
     min-height: 100vh;
     width: 100vw;
-    justify-content: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (min-width: 550px){
+        margin-top: 30px;
+        min-height: 40vh;
+        flex-direction: row;
+    }
 `
 export const ContentDiv = styled.div`
         display: flex;
-        height: 30vh;
+        flex-direction: column;
+        height: 40vh;
         width: 100%;
         justify-content: space-around;
+        align-items: center;
         flex: 1 0 auto;
 
         p{
+            text-align: center;
             width: 200px;
             font-size: .8em;
             margin-left: 10px;
             font-weight: 700;
         }
+        @media screen and (min-width: 550px){
+            height: 40vh;
+            p {
+                font-size: 2em;
+                width: 450px;
+                marign-right: auto;
+                
+            }
+        }
+
 `
 export const ContentDivTwo = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 90vh;
+        height: 70%;
         width: 100%;
         margin-bottom: 10px;
 
@@ -97,12 +126,31 @@ export const ContentDivTwo = styled.div`
         }
         svg{
             fill: #E01A4F;
-            height: 4em;
+            height: 90px;
+            width: 90px;
         }
         p{
             color:#4B4B4C;
             font-size: .8em;
             margin: 5px 10px;
+        }
+
+        @media screen and (min-width: 550px){
+            height: 60%;
+            width: 80%;
+            h3{
+                font-size: 24px;
+            }
+            svg {
+                height: 150px;
+                width: 150px;
+            
+            }
+            p {
+                font-size: 1.5em;
+                margin: 10px 20px;
+            }
+            
         }
 `
 
@@ -118,6 +166,10 @@ export const ImgContainer = styled.div`
         width: auto;
         transform: translateX(-40px);
         
+    }
+    @media screen and (min-width: 550px){
+        height: 300px;
+        width: 300px;
     }
 `
 
