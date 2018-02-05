@@ -47,20 +47,19 @@ export const ContainerOne = styled.div`
 `
 
 export const ContainerTwo = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex: 1 0 auto;
 
     h2 {
         margin: 10px 10px;
         text-align: center;
     }
     @media screen and (min-width: 550px) {
-        height: 120vh;
+        min-height: 120vh;
 
         h2 {
             font-size: 2em;
@@ -71,17 +70,38 @@ export const ContainerTwo = styled.div`
 
 `
 
+
 export const ContainerThree = styled.div`
     min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1 0 auto;
     @media screen and (min-width: 550px){
         margin-top: 30px;
         min-height: 40vh;
         flex-direction: row;
     }
+`
+export const ContainerThreeWrap = ContainerThree.extend`
+    @media screen and (min-width: 550px){
+        flex-wrap:wrap;
+    }
+
+`
+
+export const ContainerFour = ContainerTwo.extend`
+    background-color:#E9E6E0;
+
+    h2{
+        margin-top: 30px;
+        align-self: center;
+    }
+    @media screen and (min-width: 550px){
+        min-height: 40vh;
+    }
+    
 `
 export const ContentDiv = styled.div`
         display: flex;
@@ -157,6 +177,15 @@ export const ContentDivTwo = styled.div`
         }
 `
 
+export const ContentDivThree = ContentDivTwo.extend`
+@media screen and (min-width: 550px) {
+    width: 30vw;
+    p {
+        font-size: .9em;
+    }
+}
+`
+
 export const ImgContainer = styled.div`
     height: 150px;
     width: 150px;
@@ -183,7 +212,10 @@ export const ImgContainer = styled.div`
 export default { PageContainer, 
                 ContainerOne, 
                 ContainerTwo,
-                ContainerThree, 
+                ContainerThree,
+                ContainerThreeWrap,
+                ContainerFour, 
                 ImgContainer,
                 ContentDiv,
-                ContentDivTwo}
+                ContentDivTwo,
+                ContentDivThree}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Element} from 'react-scroll'
 import Home from './components/Home'
 import About from './components/About'
+import Project from './components/Project'
 import { PageContainer } from './components/styled_components/Containers'
 
 import './App.css';
@@ -15,6 +16,7 @@ class App extends Component {
         <Element name="About">
         <About />
         </Element>
+        <Project />
       </PageContainer>
     );
   }
