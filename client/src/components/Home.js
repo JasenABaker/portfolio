@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-scroll'
 import {ContainerOne} from './styled_components/Containers'
 import {ButtonHome, ATags} from './styled_components/Buttons'
 import Logo from '../Subtract.svg'
@@ -25,7 +26,18 @@ class Home extends Component {
                 </ButtonHome>
                 </Contain>
                 <div>
+                    <Link 
+                    activeClass= "Active"
+                    to="About"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={20}
+                    duration={1000}
+                    delay={30}
+                    isDynamic={true}>
                     <ATags href="#">Want to know more about me?</ATags>
+                    </Link>
                 </div>
             </ContainerOne>
         )

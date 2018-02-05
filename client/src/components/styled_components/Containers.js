@@ -101,6 +101,7 @@ export const ContentDiv = styled.div`
         }
         @media screen and (min-width: 550px){
             height: 40vh;
+            flex-direction: row;
             p {
                 font-size: 2em;
                 width: 450px;
@@ -130,8 +131,9 @@ export const ContentDivTwo = styled.div`
             width: 90px;
         }
         p{
+            text-align: center;
             color:#4B4B4C;
-            font-size: .8em;
+            font-size: .7em;
             margin: 5px 10px;
         }
 
@@ -147,6 +149,7 @@ export const ContentDivTwo = styled.div`
             
             }
             p {
+                text-align: left;
                 font-size: 1.5em;
                 margin: 10px 20px;
             }
