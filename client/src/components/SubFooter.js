@@ -24,7 +24,7 @@ const FootSub = styled.div`
 
 `
 
-const ButtonFoot = styled.button`
+const ButtonFoot = styled.div`
     color: #242325;
     margin: 3.6rem 0 0;
     font-size: 1.1rem;
@@ -61,7 +61,7 @@ class SubFooter extends Component {
             
                 <h2>Let's Work Together</h2>
                 <p>I am open to new experinces. Please, drop me a line.</p>
-                <ButtonFoot>
+                <ButtonFoot onClick={()=>this.props.openModal()}>
                 Let's Get To work!
                 </ButtonFoot>
             </FootSub>

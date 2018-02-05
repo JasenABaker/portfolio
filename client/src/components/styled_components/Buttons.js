@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const ButtonHome = styled.button`
+export const ButtonHome = styled.div`
     color: #fff;
     margin: 3.6rem 0 0;
     font-size: 1.1rem;
@@ -27,9 +27,6 @@ export const ButtonHome = styled.button`
 
 `
 
-export const ButtonFoot = ButtonHome.extend`
-    border: 2px solid #242325;
-`
 
 export const ATags = styled.a`
     color: #fff;
