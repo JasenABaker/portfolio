@@ -65,14 +65,30 @@ const FormStyled = styled.form`
 const Input = styled.input`
     height: 24px;
     width: 90%;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: 2px solid #E01A4F;
+    background: transparent;
+    color: #fff;
+    outline: none;
     @media screen and (min-width: 550px){
-        height: 34px;
+        height: 38px;
+        width: 50%;
     }
 
 `
 
 const Textarea = styled.textarea`
-    width: 90%;
+height: 74px;
+width: 90%;
+font-size: 16px;
+border-radius: 4px;
+box-shadow: none;
+border: 2px solid #E01A4F;
+background: transparent;
+color: #fff;
+outline: none;
 
 `
 const InputButton = styled.input`
@@ -82,7 +98,7 @@ font-size: 1.1rem;
 background-color: transparent;
 border: 2px solid #E01A4F;
 height: 38px;
-width: 250px;
+width: 150px;
 font-weight: 700;
 border-radius: 50px;
 display: flex;

@@ -3,13 +3,13 @@ import styled from 'styled-components'
 
 
 const FootSub = styled.div`
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
     background-color:#E01A4F;
     display: flex;
     flex-direction: column;
     align-items: center;
-    jusify-content: space-around;
+    jusify-content: space-between;
     color: #242325;
 
     h2{

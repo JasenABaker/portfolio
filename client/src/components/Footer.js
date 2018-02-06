@@ -4,7 +4,7 @@ import {ATags} from './styled_components/Buttons'
 
 
 const SytledFooter = styled.footer`
-    height: 20vh;
+    height: 30vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
