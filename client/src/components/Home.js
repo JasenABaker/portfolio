@@ -17,7 +17,7 @@ class Home extends Component {
         return(
             <ContainerOne>
                 <div>
-                    <img src={Logo} alt="Jasen Baker"/>
+                    <ATags href="https://www.linkedin.com/in/jasenabaker/"><img src={Logo} alt="Jasen Baker"/></ATags>
                 </div>
                 <Contain>
                 <h2>My name is Jasen and I love to code.</h2>
@@ -45,7 +45,7 @@ class Home extends Component {
                     duration={1000}
                     delay={30}
                     isDynamic={true}>
-                    <ATags href="#">Want to know more about me?</ATags>
+                    <ATags>Want to know more about me?</ATags>
                     </Link>
                 </div>
             </ContainerOne>

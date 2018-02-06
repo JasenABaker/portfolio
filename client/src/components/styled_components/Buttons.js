@@ -18,6 +18,7 @@ export const ButtonHome = styled.div`
     :hover{
         outline-style: none;
         background-color: #E01A4F;
+        cursor: pointer;
     }
     @media screen and (min-width: 550px) {
         height: 68px;
@@ -31,6 +32,7 @@ export const ButtonHome = styled.div`
 export const ATags = styled.a`
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 `
 
 
