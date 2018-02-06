@@ -73,7 +73,7 @@ class Form extends Component {
                     <h2>Please, Introduce yourself!</h2>
                     <p>I'll get in touch with you as soon as possible, usually within a day!</p>
                 </Top>
-                <FormStyled method="POST">
+                <FormStyled action="/send-email" method="POST">
             
                     <Input type="text" name="name"  placeholder= "name"/>
 

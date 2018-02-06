@@ -180,8 +180,10 @@ export const ContentDivTwo = styled.div`
 export const ContentDivThree = ContentDivTwo.extend`
 @media screen and (min-width: 550px) {
     width: 30vw;
+
     p {
         font-size: .9em;
+        text-align: center;
     }
 }
 `

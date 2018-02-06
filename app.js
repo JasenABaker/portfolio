@@ -38,6 +38,9 @@ app.use(express.static(__dirname + '/client/build/'))
 app.get('/', (req,res) => {
   res.sendFile(__dirname + '/client/build/index.html')
 })
+app.post('/send-email',(req,res)=>{
+  
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
