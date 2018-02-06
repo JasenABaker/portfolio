@@ -23,7 +23,7 @@ const ImgDiv1 = styled.a`
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26), 0 3px 6px rgba(0, 0, 0, 0.33);
     }
     @media screen and (min-width: 550px){
-        width: 100%;
+        width: 90%;
         h2{
             font-size: 1.5em;
         }

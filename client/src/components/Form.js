@@ -40,6 +40,17 @@ const CloseButton = styled.div`
     cursor: pointer;
     font-size: 1.5em;
     align-self: flex-end;
+    margin-right: 20px;
+
+    &:hover{
+        background-color: #373738;
+    }
+
+    @media screen and (min-width: 550px){
+        height: 50px;
+        width: 50px;
+        font-size: 2em;
+    }
 `
 const FormStyled = styled.form`
     height: 60%;
@@ -54,11 +65,42 @@ const FormStyled = styled.form`
 const Input = styled.input`
     height: 24px;
     width: 90%;
+    @media screen and (min-width: 550px){
+        height: 34px;
+    }
 
 `
 
 const Textarea = styled.textarea`
     width: 90%;
+
+`
+const InputButton = styled.input`
+color: #E01A4F;
+margin: 3.6rem 0 0;
+font-size: 1.1rem;
+background-color: transparent;
+border: 2px solid #E01A4F;
+height: 38px;
+width: 250px;
+font-weight: 700;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+:hover{
+    outline-style: none;
+    background-color: #E01A4F;
+    color: #242325;
+}
+@media screen and (min-width: 550px) {
+    height: 68px;
+    width: 350px;
+    font-size: 2.1rem;
+}
+
+
 `
 
 
@@ -81,7 +123,7 @@ class Form extends Component {
 
                     <Textarea name="message" rows="5" placeholder="message"></Textarea>
 
-                    <input type="submit" />
+                    <InputButton type="submit" />
                 </FormStyled>
             </FormPage>
         )
