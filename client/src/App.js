@@ -4,6 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Project from './components/Project'
 import SubFooter from './components/SubFooter'
+import Footer from './components/Footer'
 import Form from './components/Form'
 import { PageContainer } from './components/styled_components/Containers'
 import Modal from 'react-modal'
@@ -33,6 +34,7 @@ class App extends Component {
         <Element name="Sub">
         <SubFooter openModal={this.openModal} />
         </Element>
+        <Footer />
         <Modal isOpen={this.state.modalIsOpen}>
           <Form closeModal={this.closeModal}/>
         
