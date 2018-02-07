@@ -53,16 +53,18 @@ export const ContainerTwo = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Dhurjati', sans-serif;
 
     h2 {
         margin: 10px 10px;
         text-align: center;
+        
     }
     @media screen and (min-width: 550px) {
         min-height: 120vh;
 
         h2 {
-            font-size: 2em;
+            font-size: 4em;
             margin: 30px 10px;
         }
 
@@ -142,7 +144,7 @@ export const ContentDivTwo = styled.div`
 
         h3{
             color: #242325;
-            font-size: .9em;
+            font-size: 1.5em;
             text-transform: uppercase;
         }
         svg{
@@ -151,6 +153,7 @@ export const ContentDivTwo = styled.div`
             width: 90px;
         }
         p{
+            font-family: 'Nanum Myeongjo', serif;
             text-align: center;
             color:#4B4B4C;
             font-size: .7em;
@@ -161,7 +164,7 @@ export const ContentDivTwo = styled.div`
             height: 60%;
             width: 80%;
             h3{
-                font-size: 24px;
+                font-size: 2em;
             }
             svg {
                 height: 150px;

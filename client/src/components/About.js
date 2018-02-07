@@ -8,7 +8,7 @@ class About extends Component {
     render() {
         return (
             <ContainerTwo>
-                <h2>Somethings about me and what I can do</h2>
+                <h2>This is me and this is what I do.</h2>
                 <ContentDiv>
                     <ImgContainer>
                         <img src={Image} alt="Jasen Baker" />

@@ -13,11 +13,16 @@ const FootSub = styled.div`
     color: #242325;
 
     h2{
+        font-size: 2em;
+        font-family: 'Dhurjati', sans-serif;
+        font-weight: 900;
         margin-top: 30px;
     }
     p{
+        font-family: 'Nanum Myeongjo', serif;
         margin: 0 auto;
-        font-size: .9em;
+        font-size: 1em;
+        font-weight: bolder;
     }
     @media screen and (min-width: 550px){
         font-size: 1.5em;
@@ -27,7 +32,7 @@ const FootSub = styled.div`
 const ButtonFoot = styled.div`
     color: #242325;
     margin: 3.6rem 0 0;
-    font-size: 1.1rem;
+    font-size: 1.5em;
     background-color: transparent;
     border: 2px solid #242325;
     height: 48px;
@@ -38,6 +43,7 @@ const ButtonFoot = styled.div`
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    font-family: 'Dhurjati', sans-serif;
 
     :hover{
         outline-style: none;
