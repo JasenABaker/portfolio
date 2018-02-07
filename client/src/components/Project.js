@@ -7,7 +7,7 @@ import Project3 from './styled_components/images/Project3.png'
 
 const ImgDiv1 = styled.a`
     height: 20vh;
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     background-postion: content;
     background: linear-gradient(0deg, rgba(137,49,104,0.8),rgba(137,49,104,0.8)), url(${Project1}) center no-repeat;
@@ -58,7 +58,7 @@ class Project extends Component {
                 </ContentDivThree>
                 <ContentDivThree>
                     <ImgDiv2 href="https://murmuring-cliffs-92834.herokuapp.com/">
-                    <h2>Dungeon Master Helper</h2>
+                    <h2>Dungeon Master</h2>
                     </ImgDiv2>
                     <p>This project was designed to help Dungeon Masters for the game Dungeons and Dragons organize their adventures, enconters, players, and monsters.
                         Express, Mongodb, and Mongoose were used for this project. This project was also deployed on Heroku so give it a second to load, please.

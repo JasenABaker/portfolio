@@ -79,15 +79,18 @@ export const ContainerThree = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;    
     flex: 1 0 auto;
     @media screen and (min-width: 550px){
         margin-top: 30px;
         min-height: 40vh;
         flex-direction: row;
+        align-items: flex-start;;  
     }
 `
 export const ContainerThreeWrap = ContainerThree.extend`
-    @media screen and (min-width: 550px){
+    
+@media screen and (min-width: 550px){
         flex-wrap:wrap;
     }
 
@@ -117,7 +120,7 @@ export const ContentDiv = styled.div`
         p{
             text-align: center;
             width: 200px;
-            font-size: .8em;
+            font-size: .95em;
             margin-left: 10px;
             font-weight: 700;
         }
@@ -138,7 +141,7 @@ export const ContentDivTwo = styled.div`
         flex-direction: column;
         align-items: center;
         height: 70%;
-        width: 100%;
+        width: 70%;
         margin-bottom: 10px;
 
 
@@ -156,12 +159,12 @@ export const ContentDivTwo = styled.div`
             font-family: 'Nanum Myeongjo', serif;
             text-align: center;
             color:#4B4B4C;
-            font-size: .7em;
-            margin: 5px 10px;
+            font-size: .9em;
+            margin: 30px 10px;
         }
 
         @media screen and (min-width: 550px){
-            height: 60%;
+            height: 70%;
             width: 80%;
             h3{
                 font-size: 2em;
@@ -181,11 +184,22 @@ export const ContentDivTwo = styled.div`
 `
 
 export const ContentDivThree = ContentDivTwo.extend`
+        width: 70vw;
+ 
+h2{
+    font-size: 1.5em;
+    padding: 0;
+}
+p {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 1.3em;
+
+}
 @media screen and (min-width: 550px) {
     width: 30vw;
-
     p {
-        font-size: .9em;
+        font-size: 1em;
         text-align: center;
     }
 }
