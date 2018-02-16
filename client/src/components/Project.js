@@ -43,7 +43,7 @@ background-size: cover;
 `
 
 const ImgDiv4 = ImgDiv1.extend`
-background: linear-gradient(0deg, rgba(220,150,90,0.8),rgba(220,150,90,0.8)), url(${Team}) center no-repeat;
+background: linear-gradient(0deg, rgba(42,114,33,0.8),rgba(42,114,33,0.8)), url(${Team}) center no-repeat;
 background-size: cover;
 `
 
