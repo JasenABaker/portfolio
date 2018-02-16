@@ -4,6 +4,7 @@ import {ContainerFour, ContentDivThree, ContainerThreeWrap} from './styled_compo
 import Project1 from './styled_components/images/Project1.png'
 import Project2 from './styled_components/images/Project2.png'
 import Project3 from './styled_components/images/Project3.png'
+import Team from'./styled_components/images/TeamProject.png'
 
 const ImgDiv1 = styled.a`
     height: 20vh;
@@ -41,6 +42,11 @@ background: linear-gradient(0deg, rgba(220,150,90,0.8),rgba(220,150,90,0.8)), ur
 background-size: cover;
 `
 
+const ImgDiv4 = ImgDiv1.extend`
+background: linear-gradient(0deg, rgba(220,150,90,0.8),rgba(220,150,90,0.8)), url(${Team}) center no-repeat;
+background-size: cover;
+`
+
 
 class Project extends Component {
     render(){
@@ -70,6 +76,15 @@ class Project extends Component {
                     </ImgDiv3>
                     <p>For this project, I tried my hand a travel site. But unlike other travel sites, this app helps the user book trips to locations in worlds from various fantasy novels.
                         This project used React, Express, and Mongodb.
+                    </p>
+                </ContentDivThree>
+                <ContentDivThree>
+                    <ImgDiv4 href="https://roamatl.herokuapp.com/">
+                    <h2>Roam</h2>
+                    </ImgDiv4>
+                    <p>This was a group project that I completed with Jeremy Abernathy <a href="http://ghostmapmedia.com/">(Portfolio here)</a>,
+                    Supriya Yerramilli <a href="supriyayerramilli.com">(Portfolio here)</a>, and Eric Lu <a href="www.ericlu.site">(Portfolio here)</a>. My responsibilities included building React components and styling.
+                    I also helped with the backend on Rails. This was a wonderful learning experience for me.  Combining my skills with the differing skillsets of others to complete a task was a challenging but wonderful experience. 
                     </p>
                 </ContentDivThree>
                 </ContainerThreeWrap>
