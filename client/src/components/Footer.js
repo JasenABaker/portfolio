@@ -10,7 +10,7 @@ const SytledFooter = styled.footer`
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-color:#242325;
+    background-color:#001737
     
 `
 const IconContainer = styled.div`
@@ -27,7 +27,7 @@ const IconContainer = styled.div`
 
     svg{
         height: 20px;
-        fill:#E01A4F;
+        fill:#FD8800;
 
         &:hover {
             fill:#F15946;

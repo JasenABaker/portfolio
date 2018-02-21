@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const FormPage = styled.div`
     height: 100%;
     width: 100%;
-    background-color: #242325;
+    background-color: #001737;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +68,7 @@ const Input = styled.input`
     font-size: 16px;
     border-radius: 4px;
     box-shadow: none;
-    border: 2px solid #E01A4F;
+    border: 2px solid #FD8800;
     background: transparent;
     color: #fff;
     outline: none;
@@ -85,18 +85,18 @@ width: 90%;
 font-size: 16px;
 border-radius: 4px;
 box-shadow: none;
-border: 2px solid #E01A4F;
+border: 2px solid #FD8800;
 background: transparent;
 color: #fff;
 outline: none;
 
 `
 const InputButton = styled.input`
-color: #E01A4F;
+color: #FD8800;
 margin: 3.6rem 0 0;
 font-size: 1.1rem;
 background-color: transparent;
-border: 2px solid #E01A4F;
+border: 2px solid #FD8800;
 height: 38px;
 width: 150px;
 font-weight: 700;
@@ -107,8 +107,8 @@ align-items: center;
 
 :hover{
     outline-style: none;
-    background-color: #E01A4F;
-    color: #242325;
+    background-color: #FD8800;
+    color: #fff;
 }
 @media screen and (min-width: 550px) {
     height: 68px;

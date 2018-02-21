@@ -1,9 +1,11 @@
-<svg width="60" height="57.67955" viewBox="0 0 181 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Subtract</title>
+<svg width="181" height="174" viewBox="0 0 181 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Component</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(139 102)">
+<g id="Canvas" transform="translate(-166 211)">
+<g id="Component">
 <g id="Subtract">
-<use xlink:href="#path0_fill" transform="translate(-139 -102)" fill="#E01A4F"/>
+<use xlink:href="#path0_fill" transform="translate(166 -211)" fill="#FD8800"/>
+</g>
 </g>
 </g>
 <defs>

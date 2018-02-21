@@ -5,12 +5,12 @@ import styled from 'styled-components'
 const FootSub = styled.div`
     height: 60vh;
     width: 100vw;
-    background-color:#E01A4F;
+    background-color:#FD8800;
     display: flex;
     flex-direction: column;
     align-items: center;
     jusify-content: space-between;
-    color: #242325;
+    color: #001737;
 
     h2{
         font-size: 2em;
@@ -30,11 +30,11 @@ const FootSub = styled.div`
 `
 
 const ButtonFoot = styled.div`
-    color: #242325;
+    color: #001737;
     margin: 3.6rem 0 0;
     font-size: 1.5em;
     background-color: transparent;
-    border: 2px solid #242325;
+    border: 2px solid #001737;
     height: 48px;
     width: 250px;
     font-weight: 700;
@@ -47,8 +47,8 @@ const ButtonFoot = styled.div`
 
     :hover{
         outline-style: none;
-        background-color: #242325;
-        color: #E01A4F;
+        background-color: #001737;
+        color: #FD8800;
     }
     @media screen and (min-width: 550px) {
         height: 68px;

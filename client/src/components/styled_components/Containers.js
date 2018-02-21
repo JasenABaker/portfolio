@@ -31,7 +31,7 @@ export const ContainerOne = styled.div`
     }
 
     @media screen and (min-width: 550px) {
-        background: linear-gradient(0deg, rgba(36,35,37,0.6), rgba(36,35,37,0.6)), url(${back}) center no-repeat;
+        background: linear-gradient(0deg, rgba(36,37,51,0.6), rgba(36,37,51,0.6)), url(${back}) center no-repeat;
         background-size: cover;
 
         h2{
@@ -54,6 +54,7 @@ export const ContainerTwo = styled.div`
     justify-content: space-between;
     align-items: center;
     font-family: 'Dhurjati', sans-serif;
+    background-color:#ECE5F0;
 
     h2 {
         margin: 10px 10px;
@@ -89,24 +90,43 @@ export const ContainerThree = styled.div`
     }
 `
 export const ContainerThreeWrap = ContainerThree.extend`
+        justify-content: flex-start;
     
 @media screen and (min-width: 550px){
-        flex-wrap:wrap;
+        flex-wrap: nowrap;
+        justify-content: none;
     }
 
 `
 
-export const ContainerFour = ContainerTwo.extend`
-    background-color:#E9E6E0;
+export const ContainerFour = ContainerTwo.extend`   
+    min-height: 40vh;
+    background-color:#fff;
+    color: #001737;
 
     h2{
         margin-top: 30px;
         align-self: center;
     }
     @media screen and (min-width: 550px){
-        min-height: 40vh;
+        min-height: 60vh;
     }
     
+`
+
+export const ScrollContainer = styled.div`
+    height: 30vh;
+    width: 100vw;
+    overflow-y: scroll;
+
+    @media screen and (min-width: 550px) {
+        height: 50vh;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+   
 `
 export const ContentDiv = styled.div`
         display: flex;
@@ -151,7 +171,7 @@ export const ContentDivTwo = styled.div`
             text-transform: uppercase;
         }
         svg{
-            fill: #E01A4F;
+            fill: #FD8800;
             height: 90px;
             width: 90px;
         }
@@ -184,25 +204,84 @@ export const ContentDivTwo = styled.div`
 `
 
 export const ContentDivThree = ContentDivTwo.extend`
-        width: 70vw;
+        height: 30vh;
+        width: 90%;
+        position: relative;
+        margin: 0;
+        transition: .8s ease;
  
 h2{
     font-size: 1.5em;
     padding: 0;
 }
-p {
-    text-align: left;
-    margin-top: 30px;
-    font-size: 1.3em;
 
-}
+    :hover{
+        h2{
+            opacity: 0;
+        }
+    }
+
 @media screen and (min-width: 550px) {
     width: 30vw;
+    flex: 0 0 auto;
+   
     p {
+        padding: 0;
+        margin: 0;
         font-size: 1em;
         text-align: center;
+        
+    }
+    :hover{
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26), 0 3px 6px rgba(0, 0, 0, 0.33);
+        transform: translate(50px, -100px) scale(1.2, 1.5);
+        z-index: 1;
+
     }
 }
+`
+
+export const Overlay = styled.a`
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    overflow: scroll;
+    text-decoration: none;
+    
+
+    p{
+        padding: 0;
+        margin: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: .9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+    :hover {
+        opacity: 1;
+        transform: translateY(90px)
+    }
+    @media screen and (min-width: 550px){
+        p{
+            font-size: .9em;
+        }
+
+    }
 `
 
 export const ImgContainer = styled.div`
@@ -234,7 +313,9 @@ export default { PageContainer,
                 ContainerThree,
                 ContainerThreeWrap,
                 ContainerFour, 
+                ScrollContainer,
                 ImgContainer,
                 ContentDiv,
                 ContentDivTwo,
-                ContentDivThree}
+                ContentDivThree,
+                Overlay}

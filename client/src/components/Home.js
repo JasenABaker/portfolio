@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {Link} from 'react-scroll'
 import {ContainerOne} from './styled_components/Containers'
 import {ButtonHome, ATags} from './styled_components/Buttons'
-import Logo from '../Subtract.svg'
+import Logo from '../betterLogo.png'
 
 const Contain = styled.div`
     display: flex;
