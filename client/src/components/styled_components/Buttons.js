@@ -52,7 +52,3 @@ export const Tag = styled.div`
 
 
 
-
-export default { ButtonHome, 
-                ATags,
-                Tag}

@@ -228,13 +228,13 @@ h2{
     p {
         padding: 0;
         margin: 0;
-        font-size: 1em;
+        font-size: .8em;
         text-align: center;
         
     }
     :hover{
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26), 0 3px 6px rgba(0, 0, 0, 0.33);
-        transform: translate(50px, -100px) scale(1.2, 1.5);
+        transform: translate(50px, -100px) scale(1.2, 1.2);
         z-index: 1;
 
     }
@@ -278,7 +278,7 @@ export const Overlay = styled.a`
     }
     @media screen and (min-width: 550px){
         p{
-            font-size: .9em;
+            font-size: .8em;
         }
 
     }
@@ -307,15 +307,3 @@ export const ImgContainer = styled.div`
 
 
 
-export default { PageContainer, 
-                ContainerOne, 
-                ContainerTwo,
-                ContainerThree,
-                ContainerThreeWrap,
-                ContainerFour, 
-                ScrollContainer,
-                ImgContainer,
-                ContentDiv,
-                ContentDivTwo,
-                ContentDivThree,
-                Overlay}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import {ATags} from './styled_components/Buttons'
 
 
 const FootSub = styled.div`
@@ -62,14 +63,17 @@ const ButtonFoot = styled.div`
 class SubFooter extends Component {
     render(){
         return(
-          
             <FootSub>
             
                 <h2>Let's Work Together</h2>
-                <p>I am open to new experinces. Please, drop me a line.</p>
+                <p>I am open to new experiences. Please, drop me a line.</p>
+                <ATags href="https://drive.google.com/open?id=1gDTdRK75az9hDkvDEZ2XbTCvstKtGxtH">
+                Here's My Resume.
+                </ATags>
                 <ButtonFoot onClick={()=>this.props.openModal()}>
                 Let's Get To work!
                 </ButtonFoot>
+                
             </FootSub>
     
         )
