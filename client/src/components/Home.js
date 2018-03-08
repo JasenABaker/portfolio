@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-scroll'
 import {ContainerOne} from './styled_components/Containers'
-import {ButtonHome, ATags} from './styled_components/Buttons'
+import {ButtonHome, ATags, Tag} from './styled_components/Buttons'
 import Logo from '../betterLogo.png'
 
 const Contain = styled.div`
@@ -46,7 +46,7 @@ class Home extends Component {
                     duration={1000}
                     delay={30}
                     isDynamic={true}>
-                    <ATags>Want to know more about me?</ATags>
+                    <Tag>Want to know more about me?</Tag>
                     </Link>
                 </div>
             </ContainerOne>

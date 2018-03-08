@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
 
 
+
 const app = express();
 
 // db setup
@@ -38,9 +39,8 @@ app.use(express.static(__dirname + '/client/build/'))
 app.get('/', (req,res) => {
   res.sendFile(__dirname + '/client/build/index.html')
 })
-app.post('/send-email',(req,res)=>{
-  
-})
+const EmailController = require('./controllers/EmailController')
+app.use('/send', EmailController)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

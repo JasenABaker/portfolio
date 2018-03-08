@@ -131,13 +131,13 @@ class Form extends Component {
                     <h2>Please, Introduce yourself!</h2>
                     <p>I'll get in touch with you as soon as possible, usually within a day!</p>
                 </Top>
-                <FormStyled action="/send-email" method="POST">
+                <FormStyled onSubmit={this.props.sendEmail}>
             
-                    <Input type="text" name="name"  placeholder= "name"/>
+                    <Input type="text" name="name"  placeholder= "name" onChange={this.props.handleChange}/>
 
-                    <Input type="email" name="email" placeholder="email" />
+                    <Input type="email" name="email" placeholder="email" onChange={this.props.handleChange}/>
 
-                    <Textarea name="message" rows="5" placeholder="message"></Textarea>
+                    <Textarea name="message" rows="5" placeholder="message" onChange={this.props.handleChange}></Textarea>
 
                     <InputButton type="submit" />
                 </FormStyled>

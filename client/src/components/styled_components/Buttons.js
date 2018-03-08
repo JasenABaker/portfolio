@@ -45,9 +45,14 @@ export const ATags = styled.a`
     }
 }
 `
+export const Tag = styled.div`
+    color: #fff;
+    cursor: pointer;
+`
 
 
 
 
 export default { ButtonHome, 
-                ATags,}
+                ATags,
+                Tag}

@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/JasenABaker/portfolio#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "cookie-parser": "^1.4.3",

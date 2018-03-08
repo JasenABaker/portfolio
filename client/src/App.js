@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 import { Element} from 'react-scroll'
 import Home from './components/Home'
 import About from './components/About'
@@ -14,14 +15,46 @@ import './App.css';
 class App extends Component {
       state = {
     modalIsOpen: false,
+    email: {
+        name: '',
+        email: '',
+        message: ''
+    }
   }
 
   openModal = () => {
     this.setState({modalIsOpen: true});
   }
-  closeModal= ()=> {
+  closeModal = ()=> {
     this.setState({modalIsOpen: false});
   }
+
+  handleSendMail = async () => {
+    try{
+      const res = await axios.post('/send', this.state.email)
+      console.log(res.data)
+
+    } catch(error) {
+      console.log(error)
+    }
+
+  }
+
+  handleInputChange = (event) => {
+    const attribute = event.target.name
+    const val = event.target.value
+
+    const email = { ...this.state.email }
+    email[attribute] = val
+
+    this.setState({ email })
+}
+
+sendEmail = (event)=>{ 
+  event.preventDefault()
+  this.handleSendMail()
+  this.closeModal()
+}
 
   render() {
     return (
@@ -36,7 +69,9 @@ class App extends Component {
         </Element>
         <Footer />
         <Modal isOpen={this.state.modalIsOpen}>
-          <Form closeModal={this.closeModal}/>
+          <Form sendEmail={this.sendEmail}
+                closeModal={this.closeModal}
+                handleChange={this.handleInputChange}/>
         
         </Modal>
       </PageContainer>
