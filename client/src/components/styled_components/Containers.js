@@ -209,6 +209,7 @@ export const ContentDivThree = ContentDivTwo.extend`
         position: relative;
         margin: 0;
         transition: .8s ease;
+        
  
 h2{
     font-size: 1.5em;
@@ -234,7 +235,7 @@ h2{
     }
     :hover{
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26), 0 3px 6px rgba(0, 0, 0, 0.33);
-        transform: translate(50px, -100px) scale(1.2, 1.2);
+        transform: scale(1.5, 1.5);
         z-index: 1;
 
     }
