@@ -91,10 +91,12 @@ export const ContainerThree = styled.div`
 `
 export const ContainerThreeWrap = ContainerThree.extend`
         justify-content: flex-start;
+
     
 @media screen and (min-width: 550px){
         flex-wrap: nowrap;
         justify-content: none;
+
     }
 
 `
@@ -116,7 +118,7 @@ export const ContainerFour = ContainerTwo.extend`
 
 export const ScrollContainer = styled.div`
     height: 30vh;
-    width: 100vw;
+    width: 95vw;
     overflow-y: scroll;
 
     @media screen and (min-width: 550px) {
@@ -225,7 +227,7 @@ h2{
 @media screen and (min-width: 550px) {
     width: 30vw;
     flex: 0 0 auto;
-   
+
     p {
         padding: 0;
         margin: 0;
@@ -235,7 +237,7 @@ h2{
     }
     :hover{
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26), 0 3px 6px rgba(0, 0, 0, 0.33);
-        transform: scale(1.5, 1.5);
+        transform: scale(1.3, 1.3);
         z-index: 1;
 
     }
@@ -260,10 +262,10 @@ export const Overlay = styled.a`
     
 
     p{
-        padding: 0;
-        margin: 0;
+    padding: 0;
+    margin: 0;
     height: 100%;
-    width: 100%;
+    width: 80%;
     color: white;
     font-size: .9em;
     position: absolute;
