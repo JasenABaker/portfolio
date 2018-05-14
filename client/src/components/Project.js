@@ -24,6 +24,9 @@ const ImgDiv1 = styled.div`
 
         width: 100%;
         h2{
+            margin: 0;
+            padding: 0;
+            line-height: 1.4em;
             font-size: 1.5em;
         }
     }
@@ -31,7 +34,7 @@ const ImgDiv1 = styled.div`
 `
 
 const ImgDiv2 = ImgDiv1.extend`
-background: linear-gradient(0deg, rgba(114,225,209,0.8),rgba(114,225,209,0.8)), url(${Project2}) center no-repeat;
+background: linear-gradient(0deg, rgba(114,225,209,0.9),rgba(114,225,209,0.9)), url(${Project2}) center no-repeat;
 background-size: cover;
 `
 

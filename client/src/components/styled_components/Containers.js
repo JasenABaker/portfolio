@@ -117,7 +117,7 @@ export const ContainerFour = ContainerTwo.extend`
 `
 
 export const ScrollContainer = styled.div`
-    height: 30vh;
+    height: 40vh;
     width: 95vw;
     overflow-y: scroll;
 
@@ -126,7 +126,7 @@ export const ScrollContainer = styled.div`
         overflow-y: hidden;
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: scroll;
+
     }
    
 `
@@ -206,7 +206,7 @@ export const ContentDivTwo = styled.div`
 `
 
 export const ContentDivThree = ContentDivTwo.extend`
-        height: 30vh;
+        height: 40vh;
         width: 90%;
         position: relative;
         margin: 0;
@@ -225,7 +225,7 @@ h2{
     }
 
 @media screen and (min-width: 550px) {
-    width: 30vw;
+    width: 19%;
     flex: 0 0 auto;
 
     p {
@@ -234,12 +234,6 @@ h2{
         font-size: .8em;
         text-align: center;
         
-    }
-    :hover{
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26), 0 3px 6px rgba(0, 0, 0, 0.33);
-        transform: scale(1.3, 1.3);
-        z-index: 1;
-
     }
 }
 `
@@ -277,11 +271,12 @@ export const Overlay = styled.a`
 
     :hover {
         opacity: 1;
-        transform: translateY(90px)
+        transform: translateY(10px)
     }
     @media screen and (min-width: 550px){
         p{
             font-size: .8em;
+            line-height: 1.2em;
         }
 
     }
