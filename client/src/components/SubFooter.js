@@ -67,12 +67,10 @@ class SubFooter extends Component {
             
                 <h2>Let's Work Together</h2>
                 <p>I am open to new experiences. Please, drop me a line.</p>
+                <br />
                 <ATags href="https://drive.google.com/open?id=1gDTdRK75az9hDkvDEZ2XbTCvstKtGxtH">
-                Here's My Resume.
+                Here's My Resume
                 </ATags>
-                <ButtonFoot onClick={()=>this.props.openModal()}>
-                Let's Get To work!
-                </ButtonFoot>
                 
             </FootSub>
     

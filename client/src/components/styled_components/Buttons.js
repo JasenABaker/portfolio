@@ -43,6 +43,9 @@ export const ATags = styled.a`
         transform: scale(1.1, 1.1);
         
     }
+    :hover {
+        color: #001737;
+    }
 }
 `
 export const Tag = styled.div`

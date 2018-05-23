@@ -251,7 +251,6 @@ export const Overlay = styled.a`
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    overflow: scroll;
     text-decoration: none;
     
 
@@ -275,7 +274,7 @@ export const Overlay = styled.a`
     }
     @media screen and (min-width: 550px){
         p{
-            font-size: .8em;
+            font-size: .94em;
             line-height: 1.2em;
         }
 
