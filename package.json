@@ -8,7 +8,6 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "concurrently \"nodemon ./bin/www\" \"cd ./client  && npm start \" ",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd client && npm install && npm run build"
   },
   "repository": {
@@ -33,7 +32,9 @@
     "mongoose": "^5.0.3",
     "morgan": "^1.9.0",
     "nodemailer": "^4.4.2",
+    "nodemailer-smtp-transport": "^2.7.4",
     "path": "^0.12.7",
-    "serve-favicon": "^2.4.5"
+    "serve-favicon": "^2.4.5",
+    "xoauth2": "^1.2.0"
   }
 }

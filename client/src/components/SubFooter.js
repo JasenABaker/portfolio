@@ -71,7 +71,9 @@ class SubFooter extends Component {
                 <ATags href="https://drive.google.com/open?id=1gDTdRK75az9hDkvDEZ2XbTCvstKtGxtH">
                 Here's My Resume
                 </ATags>
-                
+                <ButtonFoot onClick={()=>this.props.openModal()}>
+                Let's Get To work!
+                </ButtonFoot>
             </FootSub>
     
         )

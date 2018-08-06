@@ -7,6 +7,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
+const nodemailer = require('nodemailer')
 
 
 
@@ -39,13 +40,13 @@ app.use(express.static(__dirname + '/client/build/'))
 app.get('/', (req,res) => {
   res.sendFile(__dirname + '/client/build/index.html')
 })
+
 const EmailController = require('./controllers/EmailController')
-app.use('/send', EmailController)
+app.use('/api/send', EmailController)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-
 
 
 // catch 404 and forward to error handler

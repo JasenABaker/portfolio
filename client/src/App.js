@@ -14,12 +14,11 @@ import './App.css';
 
 class App extends Component {
       state = {
-    modalIsOpen: false,
-    email: {
+        modalIsOpen: false,
         name: '',
         email: '',
         message: ''
-    }
+  
   }
 
   openModal = () => {
@@ -30,12 +29,15 @@ class App extends Component {
   }
 
   handleSendMail = async () => {
-    try{
-      const res = await axios.post('/send', this.state.email)
-      console.log(res.data)
 
-    } catch(error) {
-      console.log(error)
+    const { name, email, message } = this.state
+   try{ const res = await axios.post('/api/send', {
+        name,
+        email,
+        message
+      })
+    }catch(err){
+      console.log(err)
     }
 
   }
